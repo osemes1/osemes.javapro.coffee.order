@@ -24,6 +24,37 @@ Num | Name
 1. Конфігурувати логування для виведення інформації в консоль і запису файл
 2. Застосувати логування до всіх операцій на рівні info. Крім методів: constructor, getter, setter
 3. Логування має відображати хід операції, містити достатню інформацію для аналізу операції.
+
+Логування вілбувається:
+10:03:27.577 [main] INFO  osemes.javapro.coffee.order.Order - Created order for customer: Alen
+10:03:27.579 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Added order: 1 | Alen
+10:03:27.579 [main] INFO  osemes.javapro.coffee.order.Order - Created order for customer: Yoda
+10:03:27.579 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Added order: 2 | Yoda
+10:03:27.579 [main] INFO  osemes.javapro.coffee.order.Order - Created order for customer: Obi-van
+10:03:27.579 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Added order: 3 | Obi-van
+10:03:27.579 [main] INFO  osemes.javapro.coffee.order.Order - Created order for customer: John Snow
+10:03:27.579 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Added order: 4 | John Snow
+10:03:27.580 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - ================
+10:03:27.580 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Num | Name
+10:03:27.580 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - 1 | Alen
+10:03:27.580 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - 2 | Yoda
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - 3 | Obi-van
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - 4 | John Snow
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - ================
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Delivering order: 1 | Alen
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Delivering order: 2 | Yoda
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - ================
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Num | Name
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - 3 | Obi-van
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - 4 | John Snow
+10:03:27.581 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - ================
+10:03:27.582 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Order with number 33 not found.
+10:03:27.582 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - ================
+10:03:27.582 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - Num | Name
+10:03:27.582 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - 3 | Obi-van
+10:03:27.582 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - 4 | John Snow
+10:03:27.582 [main] INFO  osemes.javapro.coffee.order.CoffeeOrderBoard - ================
+
 4. У разі виключення, stacktrace має бути залогований на рівні error
 
 Виконання 4 пункту логування на рівні error можна використовувати для виведення stacktrace у випадку виключення, наприклад:
